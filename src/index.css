@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Styles */
+.gallery-btn {
+  @apply uppercase tracking-widest px-6 py-2 border-2 border-white text-white font-sans transition-all duration-300;
+  background-color: transparent;
+}
+
+.gallery-btn:hover {
+  @apply bg-white text-gray-800;
+}
+
+.hero-logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid white;
+  object-fit: contain;
+  padding: 20px;
+  background-color: rgba(0,0,0,0.2);
+  backdrop-filter: blur(2px);
+}
+
+.pagination-bar {
+  width: 30px;
+  height: 3px;
+  background-color: rgba(255,255,255,0.5);
+  transition: background-color 0.3s;
+}
+
+.pagination-bar.active {
+  background-color: white;
+}
