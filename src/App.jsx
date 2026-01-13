@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import Header from './components/Header';
 import Welcome from './components/Welcome';
 import Gallery from './components/Gallery';
-import Feature from './components/Feature';
+import MeetFounder from './components/MeetFounder';
+import Footer from './components/Footer';
 import ContactModal from './components/ContactModal';
 
 function App() {
@@ -24,7 +25,8 @@ function App() {
       <Header />
       <Welcome />
       <Gallery onOpenContact={handleOpenContact} />
-      <Feature />
+      <MeetFounder onOpenContact={handleOpenContact} />
+      <Footer />
 
       <ContactModal
         isOpen={isContactOpen}
