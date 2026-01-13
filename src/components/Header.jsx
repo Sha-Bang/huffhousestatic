@@ -1,4 +1,5 @@
 import React from 'react';
+import huffHouseLogo from '../assets/huff_house_logo.png';
 
 const Header = () => {
   return (
@@ -14,7 +15,7 @@ const Header = () => {
         <img
           alt="Huff House Logo"
           className="hero-logo shadow-lg"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxnAl4cJZY43MAWo7iCB2O41F2fm_qzJcsm90hNkjxGyq0FAKjRafwr6hUN-K7p4-zx11ha_SdaIPV-ayOZoMFFkYQiWAxSoMLZtKRYvdbCN1Ufe_NZBX7ywj8mPPZWVN1ez51QGoy9muAflhxBFfZui4kDCOnkCKcsSfCljzbNtbC273GWbolyqlv3Vy8Fgpbq67B3bCjzsnqewf8Cph7xKic7WB86R13K6sFqeK3g06e46pPqYrWTUqh6cMt_dqnAzFBH9-cgLK4"
+          src={huffHouseLogo}
         />
       </div>
     </header>
