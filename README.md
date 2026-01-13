@@ -1,6 +1,58 @@
-# React + Vite
+# React + Vite + Tailwind CSS Project
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js installed on your machine.
+
+### Installation
+
+1. Clone the repository.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+## Running Locally
+
+To start the development server and render the project in a browser locally:
+
+```bash
+npm run dev
+```
+
+Open your browser and navigate to the URL shown in the terminal (usually `http://localhost:5173`).
+
+## Building and Testing the Build
+
+To test the production build locally:
+
+1. Build the project:
+   ```bash
+   npm run build
+   ```
+   This will create a `dist/` folder with the compiled assets.
+
+2. Preview the build:
+   ```bash
+   npm run preview
+   ```
+   This will start a local server serving the built application. Navigate to the URL provided to see how the app behaves in production mode.
+
+## Google Apps Script Setup
+
+This project uses Google Apps Script to handle form submissions. The backend code is located in `gas/Code.gs`.
+
+To set it up:
+1. Open `gas/Code.gs` and follow the instructions in the file header to create and deploy the script as a Web App.
+2. Update the frontend configuration (likely in `src/services/` or an environment variable) with the deployed Web App URL.
+
+---
+
+## Official Vite Documentation
 
 Currently, two official plugins are available:
 
