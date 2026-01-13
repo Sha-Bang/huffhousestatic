@@ -21,10 +21,10 @@ const MeetFounder = ({ onOpenContact }) => {
           </p>
           <div className="mt-4 pt-8 border-t border-gray-100">
             <h3 className="font-bold text-sm uppercase tracking-widest text-huff-slate mb-4">Get in Touch</h3>
-            <p className="text-gray-600 mb-2">info@huffhouse.com</p>
-            <p className="text-gray-600 mb-6">+1 (555) 123-4567</p>
+            <p className="text-gray-600 mb-2">kayla@huffhouse.com</p>
+            <p className="text-gray-600 mb-6">+1 (xxx) yyy-zzzz</p>
             <button
-              onClick={() => onOpenContact('founder')}
+              onClick={() => onOpenContact('General')}
               className="inline-block border border-huff-dark-brown text-huff-dark-brown py-3 px-8 text-sm uppercase tracking-widest hover:bg-huff-dark-brown hover:text-white transition-all"
             >
               Contact Me
