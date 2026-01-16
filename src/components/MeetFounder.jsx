@@ -3,16 +3,14 @@ import founderImage from "../assets/founder.jpg";
 
 const MeetFounder = ({ onOpenContact }) => {
   return (
-    <section className="bg-huff-beige border-t border-gray-200">
-      <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row items-stretch min-h-[500px]">
-        <div className="w-full md:w-1/2 h-[400px] md:h-auto">
+    <section className="bg-huff-beige border-t border-gray-200 py-12 px-4">
+      <div className="max-w-[1000px] mx-auto bg-white p-8 md:p-12 shadow-sm">
+        <div className="flow-root">
           <img
             alt="Portrait of the founder"
-            className="w-full h-full object-cover"
+            className="w-full mb-6 md:w-1/3 md:float-left md:mr-10 md:mb-6 object-cover h-auto"
             src={founderImage}
           />
-        </div>
-        <div className="w-full md:w-1/2 p-12 md:p-20 flex flex-col justify-center bg-white">
           <h2 className="font-serif text-3xl mb-6 text-huff-dark-brown italic">
             Meet Kayla
           </h2>
