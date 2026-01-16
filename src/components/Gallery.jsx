@@ -17,14 +17,14 @@ const Gallery = ({ onOpenContact }) => {
     {
       id: 3,
       label: 'Charcuterie',
-      image: 'https://images.unsplash.com/photo-1750547820094-396962a3806f?auto=format&fit=crop&w=800&q=80',
-      alt: 'Rustic charcuterie board with various snacks'
+      image: 'https://images.unsplash.com/photo-1565661834093-b749691b6c82?w=800&q=80',
+      alt: 'Extravagant grazing table with cheeses, meats, and crackers'
     },
     {
       id: 4,
       label: 'Interiors',
-      image: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=800&q=80',
-      alt: 'Elegant office hallway and interior design'
+      image: 'https://images.unsplash.com/photo-1759774314108-7453725bc05c?w=800&q=80',
+      alt: 'Classic southern living room with antique furniture and floral arrangement'
     }
   ];
 

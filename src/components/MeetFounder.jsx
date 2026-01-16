@@ -5,10 +5,10 @@ const MeetFounder = ({ onOpenContact }) => {
   return (
     <section className="bg-huff-beige border-t border-gray-200 py-12 px-4">
       <div className="max-w-[1000px] mx-auto bg-white p-8 md:p-12 shadow-sm">
-        <div className="clearfix">
+        <div className="flow-root">
           <img
             alt="Portrait of the founder"
-            className="w-full md:w-1/3 md:float-left md:mr-10 md:mb-6 object-cover h-auto"
+            className="w-full mb-6 md:w-1/3 md:float-left md:mr-10 md:mb-6 object-cover h-auto"
             src={founderImage}
           />
           <h2 className="font-serif text-3xl mb-6 text-huff-dark-brown italic">
