@@ -37,6 +37,7 @@ const Gallery = ({ onOpenContact }) => {
               alt={item.alt}
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               src={item.image}
+              loading="lazy"
             />
             <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors"></div>
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
