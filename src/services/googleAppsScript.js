@@ -8,7 +8,7 @@
  */
 export const postToGoogleSheet = async (data) => {
   // Deployed Web App URL
-  const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyprXlXyvDpB6y95roXRuC3TGQDw-nxxqV8Q23c76h0UWTTgAt2Gd2qrO8IKPDJCB-1/exec';
+  const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzBjPBQ57zJVtFXFDBRgCbxVDo-M2PiYhziQXapjHV9ABMBlMFFvRaPW-N8YaUj2jjV/exec';
 
   try {
     const response = await fetch(GOOGLE_SCRIPT_URL, {
