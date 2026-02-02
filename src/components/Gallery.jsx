@@ -1,29 +1,33 @@
 import React from 'react';
+import tablescapesImg from '../assets/tablescapes.webp';
+import floralImg from '../assets/floral.webp';
+import charcuterieImg from '../assets/charcuterie.webp';
+import interiorsImg from '../assets/interiors.webp';
 
 const Gallery = ({ onOpenContact }) => {
   const items = [
     {
       id: 1,
       label: 'Tablescapes',
-      image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA5XXL8sa9PqjDUi3iGC52eUMUBxcQnav7VDs5UFR0MhWfSlNO7ifqQnpTYqpGTlWE3J2-mBa5UBOORpP4tu0HfpkZRWYckp30Is5b46E0yI1YgAR3eY0vUyp-tIKbonjWnBCzvbCgYrUxXE_0leniWm8UolmXAoJ7KDH-M_l3OGtBWwGD5OvcSb4uNlIMwQc1KdY6crYuUqLWuDXchB75qoqSU0cdKkGMmFzTD10x7KCWmcPeaIZ0GUK8M3xN6GO8cUS9C2O9iXaaa',
+      image: tablescapesImg,
       alt: 'Rustic outdoor dining table setting'
     },
     {
       id: 2,
       label: 'Floral',
-      image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA_nmrk5JpZ1dZp1dS998cJkue_50oaeE_boXA85G2IUDv50zr2wfyGXUFKafq95BOyeRbtE33pFGYspQ1vkBnBnpHVfGbpw6KPSVwYKeiHXSnrMAJP49ZT5184WNBKXASP2wxD8k6azEUT3lUHJSGy5MntRUIxeY7ngKYAgmRjuwOALX6XvYbnE-SQZqXgmn6ZL88BZwFYQlVQEXQmxR9Lm9fbeiOcQYni6xSlYJw2RqMa0EABcfZGWXNuQwM6VMsk2rrYlbraNpJJ',
+      image: floralImg,
       alt: 'Beautiful bouquet of pink and white flowers'
     },
     {
       id: 3,
       label: 'Charcuterie',
-      image: 'https://images.unsplash.com/photo-1565661834093-b749691b6c82?w=800&q=80',
+      image: charcuterieImg,
       alt: 'Extravagant grazing table with cheeses, meats, and crackers'
     },
     {
       id: 4,
       label: 'Interiors',
-      image: 'https://images.unsplash.com/photo-1759774314108-7453725bc05c?w=800&q=80',
+      image: interiorsImg,
       alt: 'Classic southern living room with antique furniture and floral arrangement'
     }
   ];
