@@ -42,22 +42,31 @@ To test the production build locally:
    ```
    This will start a local server serving the built application. Navigate to the URL provided to see how the app behaves in production mode.
 
-## Backend Setup (Firebase)
+## Google Apps Script Setup
 
-This project uses **Firebase Cloud Firestore** to handle form submissions securely without a dedicated backend server.
+This project uses Google Apps Script to handle form submissions. The backend code is located in `gas/Code.gs`.
+It is managed using clasp.
 
-### Configuration
-The Firebase configuration is located in `src/firebase.js`.
-The contact form service is located in `src/services/contactService.js`.
+### Setup & Deployment
 
-### Accessing Messages
-Form submissions are stored in the `messages` collection in Firestore.
-You can view them in the [Firebase Console](https://console.firebase.google.com/).
-
-### Deployment
-The Firestore database and security rules are managed via the Firebase CLI.
-- **Deploy Rules:** `firebase deploy --only firestore:rules`
-- **Deploy Indexes:** `firebase deploy --only firestore:indexes`
+1.  **Install Clasp globally:**
+    ```bash
+    npm install @google/clasp -g
+    clasp login
+    ```
+2.  **Create the Script Project:**
+    ```bash
+    clasp create --type webapp --title "Huff House Contact Form" --rootDir ./gas
+    ```
+3.  **Push and Deploy:**
+    ```bash
+    clasp push
+    clasp deploy
+    ```
+4.  **Get the URL:**
+    Run `clasp open` to view the script in the browser. Go to **Deploy > Manage Deployments** to copy the Web App URL.
+5.  **Update Frontend:**
+    Paste the Web App URL into `src/services/googleAppsScript.js`.
 
 ---
 
