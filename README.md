@@ -42,13 +42,22 @@ To test the production build locally:
    ```
    This will start a local server serving the built application. Navigate to the URL provided to see how the app behaves in production mode.
 
-## Google Apps Script Setup
+## Backend Setup (Firebase)
 
-This project uses Google Apps Script to handle form submissions. The backend code is located in `gas/Code.gs`.
+This project uses **Firebase Cloud Firestore** to handle form submissions securely without a dedicated backend server.
 
-To set it up:
-1. Open `gas/Code.gs` and follow the instructions in the file header to create and deploy the script as a Web App.
-2. Update the frontend configuration (likely in `src/services/` or an environment variable) with the deployed Web App URL.
+### Configuration
+The Firebase configuration is located in `src/firebase.js`.
+The contact form service is located in `src/services/contactService.js`.
+
+### Accessing Messages
+Form submissions are stored in the `messages` collection in Firestore.
+You can view them in the [Firebase Console](https://console.firebase.google.com/).
+
+### Deployment
+The Firestore database and security rules are managed via the Firebase CLI.
+- **Deploy Rules:** `firebase deploy --only firestore:rules`
+- **Deploy Indexes:** `firebase deploy --only firestore:indexes`
 
 ---
 

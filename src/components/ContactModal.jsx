@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { postToGoogleSheet } from '../services/googleAppsScript';
+import { submitContactForm } from '../services/contactService';
 
 const ContactModal = ({ isOpen, onClose, source }) => {
   const [formData, setFormData] = useState({
@@ -26,7 +26,7 @@ const ContactModal = ({ isOpen, onClose, source }) => {
     };
 
     try {
-      const response = await postToGoogleSheet(payload);
+      const response = await submitContactForm(payload);
       if (response.success) {
         setStatus('success');
         // Reset after delay or wait for close
