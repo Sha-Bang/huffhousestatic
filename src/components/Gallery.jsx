@@ -14,7 +14,7 @@ const Gallery = ({ onOpenContact }) => {
     },
     {
       id: 2,
-      label: 'Floral',
+      label: 'Florals',
       image: floralImg,
       alt: 'Beautiful bouquet of pink and white flowers'
     },
